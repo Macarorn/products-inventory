@@ -1,0 +1,31 @@
+@use './variables.scss' as *;
+// $mediaScreen: 
+.inStock{
+    // position: absolute;
+    overflow: hidden;
+    button{
+        // z-index: 0
+        z-index: -1;
+    }
+    svg{
+        font-size: 3rem;
+        // z-index: 0;
+    }
+}
+@media screen and (min-width: $mediaThreshold){
+    .inStock{
+        // top: 0;
+        
+        margin-left: $sidebarSize;
+        // width: 100%;
+        height: 100vh;
+        min-height: -webkit-fill-available;
+        z-index: -1;
+        // background: lightgray;
+    }
+}
+@media screen and(max-width: $mediaThreshold){
+    .inStock{
+        margin-top: $sidebarSize;
+    }
+}

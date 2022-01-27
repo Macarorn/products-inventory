@@ -1,0 +1,8 @@
+$mediaThreshold: 700px;
+$boxShadowParams: 0 0 .2rem rgba(gray, .5);
+$beautyBlue: #03a9f4;
+$buttonPadding: .7rem;
+$buttonSvgSize: 1.5rem;
+$sidebarSize: calc($buttonPadding * 2 + $buttonSvgSize);
+$sidebarFullSize: calc($sidebarSize + 10rem);
+$darkBackground: #202020;

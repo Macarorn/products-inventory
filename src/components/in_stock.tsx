@@ -1,0 +1,22 @@
+import React from 'react'
+import "../sass/in_stock.scss";
+import AddProduct from './add_product';
+import { BiPlus } from 'react-icons/bi';
+import { useShowAddProductUpdate } from '../context/showAddProductContext';
+
+function InStock() {
+    const updateShowAddProduct = useShowAddProductUpdate()
+    return (
+            <div className="inStock">
+                <BiPlus onClick={()=>updateShowAddProduct(true)}/>
+                <div className="aaa">
+                <AddProduct />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor molestiae veniam aperiam totam! Totam, quibusdam. Reprehenderit praesentium accusantium laborum atque eligendi? Ipsum tenetur dolorum laudantium! Error blanditiis accusamus repellendus assumenda facilis nostrum autem saepe necessitatibus consequatur praesentium temporibus porro nam amet, beatae, neque ipsa dicta. Similique magnam optio, iste expedita ratione id accusamus aliquid fuga nostrum eius distinctio quo doloribus cum pariatur nesciunt, facilis beatae magni. Tenetur architecto provident ut dolorum, ea laborum nulla! Beatae voluptatem aperiam provident eos corrupti, repellat illo tempora praesentium consequatur laudantium, voluptatibus debitis asperiores accusamus. Commodi quasi, obcaecati, est, perspiciatis ducimus natus eligendi hic nostrum deserunt quia numquam eius rerum fugit? Ducimus fuga ipsa tempore corporis saepe odit porro recusandae nihil obcaecati voluptas! Esse libero, sunt dolore, repellat quam quo adipisci repellendus mollitia nesciunt quaerat laboriosam! Porro beatae ullam dolorem quo veniam at nihil, ab doloribus aliquid saepe sit. Rem minus, alias suscipit, tempore tempora fugit tenetur provident ad consequatur accusantium quam asperiores iste. Iste rerum sed inventore cupiditate, eveniet voluptatibus nesciunt deserunt quaerat nam veniam atque commodi sint consectetur magnam cum reiciendis similique repellat voluptate labore esse illum doloremque! Animi ea adipisci itaque vitae, expedita quas cum similique cupiditate laborum perspiciatis neque ducimus dicta aspernatur optio id? Dolorum, rerum, praesentium officiis numquam minus consectetur rem labore reiciendis magni accusamus voluptate nemo amet. Nulla deserunt quisquam repudiandae expedita saepe iusto! Consequatur amet recusandae est, quidem unde asperiores molestias dicta facere optio, ea error odit totam corporis hic quaerat atque et natus ratione officiis quam voluptates a fuga ex harum. Voluptatibus soluta officiis autem maiores, qui, quidem omnis fugiat atque minima quae voluptate ullam facilis necessitatibus reprehenderit earum consectetur consequuntur sapiente aliquam explicabo et dignissimos. Dicta illum at, repellat tempora corporis maiores deleniti non asperiores nobis labore cumque maxime praesentium, amet atque repellendus? Ut, voluptas? Itaque sed cumque sequi quasi odio sunt quos aut perferendis id possimus. Beatae reprehenderit harum pariatur iste explicabo autem vero praesentium, aspernatur culpa consectetur odit? Ex, eaque earum. Optio rem tenetur quos! Incidunt nisi porro nam. Modi iste excepturi consectetur. Odit neque magni suscipit molestias deleniti unde, ipsam dicta excepturi cupiditate accusamus voluptatum, ullam reiciendis vero cum rerum maiores laborum obcaecati, numquam autem voluptatibus quasi ad? Ullam laboriosam atque velit a illum temporibus molestias veritatis, ipsum recusandae fugit obcaecati hic doloremque tempora nemo soluta! Similique id animi quibusdam sunt quia, excepturi maxime, inventore neque eos cupiditate quos tempore cumque minima delectus deserunt obcaecati corporis? Repudiandae ipsum vel neque consequuntur laboriosam, aliquam nulla ea id eaque commodi voluptatum quidem officia. Temporibus accusantium nisi delectus. Iusto eveniet consequatur optio possimus officia neque doloribus iste cupiditate repellendus repellat, incidunt asperiores, nihil, ipsam repudiandae voluptatibus. Libero itaque debitis molestias asperiores? Facilis, ipsa tempora obcaecati possimus enim repellendus nobis, mollitia dicta provident labore fugit explicabo facere itaque a. Recusandae sint repudiandae quam blanditiis nam libero quae repellat eveniet molestias ex beatae, labore quibusdam quasi? Nihil aliquid ab veniam ullam voluptatum qui eos sit, assumenda excepturi alias corporis. Quas nulla sequi libero, accusantium delectus corrupti sunt odit?
+                    </p>
+                </div>
+            </div>
+    )
+}
+
+export default InStock
